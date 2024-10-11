@@ -157,3 +157,7 @@
  cold.16.f:0 ""Just over the horizon a great white mass crept ever closer towards us. Though it made no sound the aura of murderous intent was a roar in our heads.""
  cold.16.a:0 "Employ evasive maneuvers."
  cold.16.b:0 "Stand our ground and kill the beast."
+
+
+ je_antarctica_colonization:0 "The Seventh Continent"
+ je_antarctica_colonization_reason:0 "Brave explorers have reached the very bottom of the world, trekking across the frozen wastes of the very last frontier on earth: Antarctica. However, there are still many opportunities for knowledge and prestige on the continent, completing research expeditions and working to establish a permanent foothold on the continent is certain to bring both to our nation.\n\nConstructing a research station and funding successful expeditions will increase our presence, which if high enough, will allow us to make and official claim to a section of the continent."

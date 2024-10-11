@@ -106,3 +106,26 @@
     transferable = no
     should_be_pinned_by_default = yes
 }
+
+je_antarctica_colonization = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_expeditions
+
+	is_shown_when_inactive = {
+		OR = {
+			has_variable = first_to_reach_south_pole
+			any_scope_state = {
+				OR = {
+					region = sr:region_la_plata
+					region = sr:region_oceania
+					region = sr:region_southern_africa
+				}
+			}
+		}
+	}
+
+	possible = {
+		has_global_variable = south_pole_reached
+	}
+}
