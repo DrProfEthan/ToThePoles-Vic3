@@ -1,9 +1,9 @@
 {
   "name" : "To The Poles!",
 	"id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
+  "version" : "0.1",
+  "supported_game_version" : "1.7.*",
+  "short_description" : "An overhaul of expeditions and colonization, plus ultra!",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
