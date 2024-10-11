@@ -1284,3 +1284,53 @@ cold.15 = {
 		expedition_minor_progress_effect = yes
 	}
 }
+
+cold.16 = { #the bear
+	type = country_event
+	placement = ROOT
+	
+	title = cold.16.t
+	desc = cold.16.d
+	flavor = cold.16.f
+	
+	duration = 3
+	
+	event_image = {
+		video = "europenorthamerica_antarctica"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		var:expedition_progress >= 2
+		NOT = { has_variable = polar_bear_var }
+	}
+	
+	immediate = {
+		set_variable = polar_bear_var
+	}
+	
+	option = { #run!
+		name = cold.16.a
+		default_option = yes
+		random_list = {
+			50 = {
+				expedition_minor_progress_effect = yes
+			}
+			50 = {
+				add_small_peril_effect = yes
+			}
+		}
+	}
+	option = { #kill the beast
+		name = cold.16.b
+		random_list = {
+			50 = {
+				expedition_minor_progress_effect = yes
+			}
+			50 = {
+				add_small_peril_effect = yes
+			}
+		}
+	}
+}

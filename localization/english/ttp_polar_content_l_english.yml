@@ -151,3 +151,9 @@
  cold.15.f:0 ""A light-colored rock was dug up this very morning. Its smooth texture and perfect curvature was only interrupted by a pattern of unfamiliar marks, all appearing in a sequence that none of our men could dare to decipher. When positioned between one's eye and the sun, its tone varies, seemingly depending on the time of the day; now white, now yellow, at dusk — green.""
  cold.15.a:0 "Camp for the night and study the patterns."
  cold.15.b:0 "Ignore it and press on."
+
+ cold.16.t:0 "The Bear"
+ cold.16.d:0 "Some on the team have now noticed that a Polar Bear has been stalkimng them for some miles. It is the largest animal many on the expedition have ever seen."
+ cold.16.f:0 ""Just over the horizon a great white mass crept ever closer towards us. Though it made no sound the aura of murderous intent was a roar in our heads.""
+ cold.16.a:0 "Employ evasive maneuvers."
+ cold.16.b:0 "Stand our ground and kill the beast."

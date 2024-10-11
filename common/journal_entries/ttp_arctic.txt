@@ -9,6 +9,9 @@
 			10 = cold.6 #eating the dogs
 			30 = cold.8 #pack ice
 			50 = cold.11 #great ice barrier
+			5 = cold.15 #aurora
+			10 = cold.16 #the bear
+			50 = cold.14 #discovery hut
 		}
 	}
 	
