@@ -1,0 +1,85 @@
+﻿ttp_sell_greenland_decision = {
+
+	is_shown = {
+		c:DEN ?= THIS
+        owns_entire_state_region = STATE_GREENLAND
+	}
+	possible = {
+		is_at_war = no
+		is_subject = no
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = { 
+				scaled_debt > 0
+			}
+			add = 25
+		}
+		modifier = {
+			trigger = { 
+				has_modifier = declared_bankruptcy
+			}
+			add = 50
+		}
+		modifier = {
+			trigger = { 
+				any_country = {
+					NOT = { this = root }
+					country_rank >= root.country_rank
+					has_interest_marker_in_region = sr:region_north_sea_coast
+					relations:root <= relations_threshold:poor
+				}
+			}
+			add = 25
+		}
+		modifier = {
+			trigger = { 
+				any_country = {
+					NOT = { this = root }
+					country_rank >= root.country_rank
+					has_interest_marker_in_region = sr:region_north_sea_coast
+					relations:root <= relations_threshold:cold
+				}
+			}
+			add = 50
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = has_greenland_sale_cooldown_tt
+			NOT = { has_variable = greenland_sale_cooldown }
+		}
+		has_state_in_state_region = STATE_GREENLAND
+		custom_tooltip = {
+			text = friendly_nation_with_interest_in_alaska_tt
+			any_country = {
+				NOT = { is_subject = yes }
+				NOT = { this = root }
+				relations:root >= 0
+				country_rank >= rank_value:great_power
+				has_interest_marker_in_region = region_north_sea_coast
+			}
+		}
+	}
+
+	effect = {
+		set_variable = {
+			name = greenland_sale_cooldown
+			months = 12
+		}
+		save_scope_as = greenland_seller
+		random_country = {
+			limit = {
+				NOT = { is_subject = yes }
+				NOT = { this = root }
+				relations:root >= 0
+				country_rank >= rank_value:great_power
+				has_interest_marker_in_region = region_north_sea_coast
+			}
+			trigger_event = { id = greenland.1 popup = yes }
+		}
+	}
+}
