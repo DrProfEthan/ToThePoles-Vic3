@@ -5,6 +5,8 @@
 	on_monthly_pulse = {
 		random_events = {
 			100 = 0
+			10 = cold.3 #lost
+			10 = cold.6 #eating the dogs
 			30 = cold.8 #pack ice
 			50 = cold.11 #great ice barrier
 		}

@@ -1,6 +1,11 @@
- antarctica_expedition:0 "Antarctic Expedition"
+﻿l_english:
+ antarctica_expedition:0 "Race to the South Pole"
  antarctica_expedition_desc:0 "Through the wonders of technology and the heroism of our explorers, the interior of the Antarctic Continent may finally be accessible. The race is on, and we must be first to the Pole!"
- cold.101.t:0 "Expedition to Antarctica"
+
+ arctic_expedition:0 "Race to the North Pole"
+ arctic_expedition_desc:0 "With greater access to the great white north than ever before; many explorers are making a push to reach the top of the world. The race is on, and we must be first to the Pole!"
+
+ cold.101.t:0 "Expedition to South Pole"
  cold.101.d:0 "The Antarctic Continent remains almost entirely unexplored. An expedition to this vast frozen waste would be expensive and fraught with peril, but the glory of being first to the Pole would be immense."
  cold.101.f:0 "Murmurs and whispers soon fill the halls of the world's most prestigious science academies, as the prospect of reaching the final geographical discovery becomes much more than a fever dream."
  cold.101.a:0 "I know just the man for the job."
@@ -120,3 +125,29 @@
  je_expedition_fail:0 "The expedition reaches a peril of 8 or above."
  je_expedition_success:1 "Will complete if the expedition reaches a progress of 8 or above."
  je_arctic_reason:0 "The far north has always been a place of myths and mysteries, modern explorations above the arctic circle have found it to be a vast frozen ocean. Being the first to cross the ice and reach the North Pole would be a prestigious achievement indeed."
+
+ cold.103.t:0 "Expedition to the Arctic"
+ cold.103.d:0 "The North Pole has yet to be visited by man. An expedition to across the vast arctic ice would be expensive and fraught with peril, but the glory of being first to the Pole would be immense."
+ cold.103.f:0 "Explorers from around the globe race to prepare teams and supplies to be the first to the top."
+ cold.103.a:0 "Time to hire an admiral with the experience we need."
+ cold.103.b:0 "Perhaps a seasoned explorer should recieve our backing."
+
+ cold.104.t:0 "A Polar Explorer"
+ cold.104.d:0 "We must choose a leader for the upcoming expedition to the Antarctic Continent. A few promising candidates have distinguished themselves."
+ cold.104.f:0 "Few people are capable of rightly appreciating this heroic deed, this brilliant proof of human courage and energy. These men will sail right into the heart of the pack ice, which all previous explorers have regarded as certain death. These men are heroes — heroes in the highest sense of the word."
+ cold.104.a:0 "[SCOPE.sCharacter('expedition_leader_1').GetFullName] is an experienced polar explorer."
+ cold.104.b:0 "[SCOPE.sCharacter('expedition_leader_2').GetFullName] will lead us to glory."
+ cold.104.c:0 "[SCOPE.sCharacter('expedition_leader_3').GetFullName] has never let us down before."
+ cold.104.e:0 "[SCOPE.sCharacter('expedition_leader_4').GetFullName] is the most prepared one."
+
+ cold.14.t:0 "Before We Go"
+ cold.14.d:0 "The expedition team gathers at a village in the far northern reaches, making a few last decisions before departing."
+ cold.14.f:1 ""Hidden in wonder and snow, or sudden with summer, This land stares at the sun in a huge silence, endlessly repeating something we cannot hear. Inarticulate, arctic, not written on by history, empty as paper, It leans away from the world with songs in its lakes older than love, and lost in the miles."\n\n—F. R. Scott"
+ cold.14.a:0 "Wait and raise funds for additional supplies."
+ cold.14.b:0 "We dont have have time to wait. Mush!"
+
+ cold.15.t:0 "Majesty of the Sky"
+ cold.15.d:0 "During the expedition's advances some on the team have taken note of the especially vibrant northern lights at night, along with a unique view of famous constellations"
+ cold.15.f:0 ""A light-colored rock was dug up this very morning. Its smooth texture and perfect curvature was only interrupted by a pattern of unfamiliar marks, all appearing in a sequence that none of our men could dare to decipher. When positioned between one's eye and the sun, its tone varies, seemingly depending on the time of the day; now white, now yellow, at dusk — green.""
+ cold.15.a:0 "Camp for the night and study the patterns."
+ cold.15.b:0 "Ignore it and press on."

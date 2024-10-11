@@ -1127,7 +1127,7 @@ cold.104 = { #Choose commander
 			set_character_busy_and_immortal = yes
 		}
 		add_journal_entry = {
-			type = je_antarctica
+			type = je_arctic
 		}
 	}
 
@@ -1146,7 +1146,7 @@ cold.104 = { #Choose commander
 			set_character_busy_and_immortal = yes
 		}
 		add_journal_entry = {
-			type = je_antarctica
+			type = je_arctic
 		}
 	}
 
@@ -1165,7 +1165,7 @@ cold.104 = { #Choose commander
 			set_character_busy_and_immortal = yes
 		}
 		add_journal_entry = {
-			type = je_antarctica
+			type = je_arctic
 		}
 	}
 	
@@ -1185,7 +1185,7 @@ cold.104 = { #Choose commander
 			set_character_busy_and_immortal = yes
 		}
 		add_journal_entry = {
-			type = je_antarctica
+			type = je_arctic
 		}
 	}
 }
@@ -1194,23 +1194,8 @@ cold.14 = {
 	type = country_event
 	placement = ROOT
 	
-	title = cold.2.t
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = cold.2.d
-				trigger = {
-					NOT = { has_global_variable = discovery_hut }
-				}
-			}
-			triggered_desc = {
-				desc = cold.2.d2
-				trigger = {
-					has_global_variable = discovery_hut
-				}
-			}
-		}
-	}
+	title = cold.14.t
+	desc = cold.14.d
 	flavor = cold.14.f
 	
 	duration = 3
@@ -1250,5 +1235,52 @@ cold.14 = {
 			}
 		}
 		add_small_peril_effect = yes
+	}
+}
+
+# Aurora Borealis? Localized entirely within this event file?
+cold.15 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cold.15.t
+	desc = cold.15.d
+	flavor = cold.15.f
+	
+	duration = 3
+	
+	event_image = {
+		video = "europenorthamerica_antarctica"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		var:expedition_progress >= 3
+		NOT = { has_variable = aurora_var }
+	}
+	
+	immediate = {
+		set_variable = aurora_var
+	}
+	
+	option = { #study it
+		name = cold.15.a
+		default_option = yes
+		random_list = {
+			33 = {
+				expedition_moderate_progress_effect = yes
+			}
+			33 = {
+				custom_tooltip = expedition_event_delayed_tt
+			}
+			33 = {
+				add_small_peril_effect = yes
+			}
+		}
+	}
+	option = { #ignore it
+		name = cold.15.b
+		expedition_minor_progress_effect = yes
 	}
 }
