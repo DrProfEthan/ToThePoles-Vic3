@@ -1,2 +1,10 @@
 ﻿l_english:
+ ttp_sell_greenland_decision:0 "Sell Greenland"
+ ttp_sell_greenland_decision_desc:0 "Greenland is sparsely inhabited realm of snow and ice, however perhaps a major power may take it off our hands if we were to need the money..."
+ 
  greenland.1.t:0 "An Offer for Greenland"
+ greenland.1.d:2 "[SCOPE.sCountry('greenland_seller').GetName] finds itself unable to afford its arctic colony of [SCOPE.sState('greenland_scope').GetName], and appears willing to sell the territory to us for an affordable sum."
+ greenland.1.f:0 ""The representative of [SCOPE.sCountry('greenland_buyer').GetNameNoFormatting] agrees to pay at the treasury in [SCOPE.sCountry('greenland_buyer').GetCapital.GetCityHubName], to the diplomatic representative or other agent of [SCOPE.sCountry('greenland_seller').GetRuler.GetHerHis] Majesty the [SCOPE.sCountry('greenland_seller').GetRuler.GetPrimaryRoleTitle] of all [SCOPE.sCountry('greenland_seller').GetNameNoFormatting], seven million two hundred thousand dollars in gold.""
+ greenland.1.a:1 "Make the necessary arrangements."
+ greenland.1.c:1 "We cannot afford such an expense right now."
+ greenland.1.tt1:1 "We will offer £3m over the course of 1 year."
